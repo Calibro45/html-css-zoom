@@ -118,7 +118,15 @@ button {
 
 #camera {
     align-items: center;
-    justify-content: space-around;
+    row-gap: 50px;
+}
+
+#camera .speaker-view {
+    gap: 10px;
+    padding: 10px;
+    font-size: 14px;
+    align-self: flex-end;
+    /* background-color: #4a4a4a; */
 }
 
 #camera .webcam__wrapper {
@@ -127,5 +135,27 @@ button {
 }
 
 #camera .webcam__wrapper .webcam-img {
-    width: 250px;
+    max-width: 250px;
+    min-height: 150px;
+    position: relative;
+}
+
+#camera .webcam-img .user-cam {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.overlay::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
 }
