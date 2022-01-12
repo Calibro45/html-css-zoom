@@ -15,6 +15,10 @@ ol, ul {
     list-style-type: none;
 }
 
+img {
+    width: 100%;
+}
+
 /* utilities */
 
 .flex {
@@ -108,4 +112,20 @@ button {
     background-color: #4a4a4a;
     line-height: 80px;
     padding: 0 20px;
+}
+
+/* cam section */
+
+#camera {
+    align-items: center;
+    justify-content: space-around;
+}
+
+#camera .webcam__wrapper {
+    max-width: 1750px;
+    flex-wrap: wrap;
+}
+
+#camera .webcam__wrapper .webcam-img {
+    width: 250px;
 }
