@@ -17,6 +17,7 @@ ol, ul {
 
 img {
     width: 100%;
+    display: block;
 }
 
 /* utilities */
@@ -59,12 +60,11 @@ button {
     font-size: 14px;
     text-align: center;
     flex-wrap: wrap;
-    row-gap: 60px;
+    row-gap: 20px;
 }
 
 #navigation .audio-video, .main-nav {
     flex-wrap: wrap;
-    height: 60px;
     padding: 0 20px;
 }
 
@@ -104,6 +104,10 @@ button {
     display: contents
 }
 
+#navigation .main-nav li {
+    padding: 5px 0;
+}
+
 #navigation #green {
     color: #49b80b;
 }
@@ -135,33 +139,37 @@ button {
 
 }
 
+/* webcam img */
+
 #camera .webcam__wrapper {
     max-width: 1750px;
     flex-wrap: wrap;
+    gap: 15px 5px;
 }
 
-#camera .webcam__wrapper .webcam-img {
+#camera .webcam__wrapper .webcam__card {
     max-width: 250px;
     min-height: 150px;
     position: relative;
 }
 
-#camera .webcam-img .user-cam {
+#camera .webcam__card .user-cam {
     position: absolute;
     bottom: 0px;
     left: 0;
     padding: 10px 5px;
     font-size: 14px;
+    z-index: 9999;
 }
 
 .overlay::after {
     content: "";
-    display: block;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #000;
-    opacity: 0.3;
+    background-color: #64707a;
+    opacity: 0.7;
+    z-index: -1;
 }
