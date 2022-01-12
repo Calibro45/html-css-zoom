@@ -1,7 +1,18 @@
+/* reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #fff;
+}
+
+ol, ul {
+    list-style-type: none;
 }
 
 /* utilities */
@@ -32,3 +43,11 @@ main {
 }
 
 /* nav bar */
+
+#navigation .nav__container {
+    justify-content: space-between;
+}
+
+#navigation .main-nav ol li {
+    display: inline-block;
+}
