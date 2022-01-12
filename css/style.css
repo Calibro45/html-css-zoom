@@ -123,10 +123,16 @@ button {
 
 #camera .speaker-view {
     gap: 10px;
-    padding: 10px;
+    padding: 5px;
     font-size: 14px;
     align-self: flex-end;
-    /* background-color: #4a4a4a; */
+}
+
+#camera .speaker-view .speaker__cta {
+    background-color: #4a4a4a;
+    padding: 5px 10px;
+    border-radius: 5px;
+
 }
 
 #camera .webcam__wrapper {
