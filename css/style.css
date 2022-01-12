@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -34,40 +34,35 @@ body {
 main {
     flex-grow: 1;
     background-color: #000;
-    border: 2px solid red;
 }
 
 /* nav bar */
 
 #navigation .nav__container {
     justify-content: space-between;
+    align-items: center;
     background-color: #222222;
     color: #c4cebc;
-    padding: 15px;
+    padding: 5px 15px;
     height: 80px;
     font-size: 14px;
+    text-align: center;
 }
 
-#navigation .nav__container .audio-video {
-    column-gap: 10px;
+#navigation .audio-video, .main-nav, .end-meet {
+    height: 60px;
 }
 
-#navigation .audio-video .mic {
-    position: relative;
-    padding-right: 20px;
-}
-
-#navigation .absolute {
-    font-size: 12px;
-    position: absolute;
-    right: 0;
+#navigation .nav__container .audio-video, .main-nav {
+    column-gap: 20px;
 }
 
 #navigation i {
     color: #fff;
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
-#navigation .main-nav ol li {
-    display: inline-block;
+#navigation .main-nav ol {
+    display: contents
 }
