@@ -36,6 +36,13 @@ main {
     background-color: #000;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+
+
 /* nav bar */
 
 #navigation .nav__container {
@@ -43,18 +50,32 @@ main {
     align-items: center;
     background-color: #222222;
     color: #c4cebc;
-    padding: 5px 15px;
-    height: 80px;
+    min-height: 80px;
     font-size: 14px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
-#navigation .audio-video, .main-nav, .end-meet {
+#navigation .audio-video, .main-nav {
+    flex-wrap: wrap;
     height: 60px;
+    padding: 0 20px;
 }
 
 #navigation .nav__container .audio-video, .main-nav {
-    column-gap: 20px;
+    gap: 0 20px;
+}
+
+#navigation .audio-video .mic, .camera {
+    padding-right: 20px;
+    position: relative;
+}
+
+#navigation .mic .absolute, #navigation .camera .absolute {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    font-size: 10px;
 }
 
 #navigation i {
@@ -65,4 +86,10 @@ main {
 
 #navigation .main-nav ol {
     display: contents
+}
+
+#navigation .nav__cta {
+    background-color: #4a4a4a;
+    line-height: 80px;
+    padding: 0 20px;
 }
