@@ -40,6 +40,7 @@ button {
     background-color: transparent;
     border: none;
     color: red;
+    font-size: 14px;
 }
 
 
@@ -54,6 +55,7 @@ button {
     font-size: 14px;
     text-align: center;
     flex-wrap: wrap;
+    row-gap: 60px;
 }
 
 #navigation .audio-video, .main-nav {
@@ -66,16 +68,26 @@ button {
     gap: 0 20px;
 }
 
-#navigation .audio-video .mic, .camera {
+#navigation .relative {
     padding-right: 20px;
     position: relative;
 }
 
-#navigation .mic .absolute, #navigation .camera .absolute {
+#navigation .relative.alt {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+#navigation .absolute {
     position: absolute;
     right: 0;
     top: 15px;
     font-size: 10px;
+}
+
+#navigation .absolute.alt {
+    left: -40px;
+    top: 15px;
 }
 
 #navigation i {
@@ -88,7 +100,11 @@ button {
     display: contents
 }
 
-#navigation .nav__cta {
+#navigation #green {
+    color: #49b80b;
+}
+
+#navigation .nav__container .nav__cta {
     background-color: #4a4a4a;
     line-height: 80px;
     padding: 0 20px;
