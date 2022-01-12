@@ -29,16 +29,11 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column-reverse;
-    background-color: #000;
-}
-
-header {
-    padding: 20px;
-    border: 2px solid red;
 }
 
 main {
     flex-grow: 1;
+    background-color: #000;
     border: 2px solid red;
 }
 
@@ -46,6 +41,31 @@ main {
 
 #navigation .nav__container {
     justify-content: space-between;
+    background-color: #222222;
+    color: #c4cebc;
+    padding: 15px;
+    height: 80px;
+    font-size: 14px;
+}
+
+#navigation .nav__container .audio-video {
+    column-gap: 10px;
+}
+
+#navigation .audio-video .mic {
+    position: relative;
+    padding-right: 20px;
+}
+
+#navigation .absolute {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+}
+
+#navigation i {
+    color: #fff;
+    font-size: 22px;
 }
 
 #navigation .main-nav ol li {
