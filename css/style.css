@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing:border-box;
 }
+
+/* utilities */
+
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #000;
+}
+
+header {
+    padding: 20px;
+    border: 2px solid red;
+}
+
+main {
+    flex-grow: 1;
+    border: 2px solid red;
+}
+
+/* nav bar */
